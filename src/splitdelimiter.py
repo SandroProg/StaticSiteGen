@@ -16,7 +16,6 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
                     ])
 
     return text_nodes
-
 def split_nodes_image(old_nodes):
     def extract(old_node):
         matches = extract_markdown_images(old_node.text)

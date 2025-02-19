@@ -1,5 +1,4 @@
 from textnode import *
-from extractmarkdown import *
 from splitdelimiter import *
 
 def text_to_textnode(text):

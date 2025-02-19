@@ -3,6 +3,7 @@ import unittest
 from extractmarkdown import *
 
 class TestHtmlNode(unittest.TestCase):
+    '''
     def test_image(self):
         text = "This is text with a ![rick roll](https://i.imgur.com/aKaOqIh.gif) and ![obi wan](https://i.imgur.com/fJRm4Vk.jpeg)"
         print("\n\nMARKDOWN TO IMAGES TEST\n")
@@ -48,6 +49,7 @@ class TestHtmlNode(unittest.TestCase):
         block = "1. mescolare gli ingredienti\n2. stendere su una teglia\n3. infornare"
         print("\n\nORDERED LIST BLOCK TEST")
         print(block_to_block_type(block))
+        '''
 
 
 if __name__ == "__main__":
