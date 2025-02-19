@@ -63,8 +63,8 @@ def markdown_to_html_node(markdown):
                 child = ParentNode("blockquote",text_to_children(block))
             
             case "unordered_list":
-                splitted = block.splitlines(keepends=True).lstrip("* ").lstrip("- ")
-                lines = list(map(lambda line: ParentNode("li", text_to_children(line)), splitted))
+                splitted = block.splitlines(keepends=True)
+                lines = list(map(lambda line: ParentNode("li", text_to_children(line.lstrip("* ").lstrip("- "))), splitted))
                 child = ParentNode("ul", lines)
 
             case "ordered_list":
